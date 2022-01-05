@@ -45,6 +45,11 @@ body {
     margin-bottom: var(--space4x);
 }
 
+q {
+    font-weight: bold;
+    font-size: 16px;
+}
+
 button {
     -webkit-appearance: none;
     appearance: none;
@@ -57,4 +62,47 @@ button {
 .noscroll,
 .noscroll body {
   overflow: hidden;
+}
+
+.main__start {
+    margin-top: 50px;
+}
+
+.main__start h3 {
+    text-align: center;
+}
+
+.main__start h4 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.main__body h4{
+    margin-left: 20px;
+}
+
+.main__text {
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.main--aquaman {
+    position: relative;
+    z-index: 3;
+}
+
+.buttons {
+    display: inline;
+}
+
+.button__redirect {
+    margin-left: 170px;
+    margin-top: -22px;
+    width: 25%;
+}
+
+.button__text {
+    color: gray;
+    position: relative;
+    margin-left: 190px;
 }
