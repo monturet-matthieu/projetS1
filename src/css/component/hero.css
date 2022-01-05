@@ -1,12 +1,12 @@
 .hero__background {
     position: absolute;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .hero__logo {
     width: 25%;
     position: relative;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-left: 135px;
     margin-bottom: -10px;
 }
@@ -22,7 +22,7 @@
 }
 
 .hero__item {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 242px;
 }
 
@@ -32,7 +32,8 @@
 }
 
 .hero__title {
-    width: 60%;
-    margin-top: 80px;
-    margin-left: 75px;
+    width: 45%;
+    margin-top: -40px;
+    margin-left: 105px;
+    margin-bottom: 251px;
 }

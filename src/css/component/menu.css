@@ -6,9 +6,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--noir);
-  font-size: var(--menu);
-  letter-spacing: var(--letter-spacing);
   transform: translateX(-100%);
   transition: all .6s ease;
 }
@@ -36,11 +33,26 @@
   position: absolute;
 }
 
-.menu__img--accueil {
+.menu__img--accueil, .menu__img--apropos, .menu__img--aquaman, .menu__img--pb, .menu__img--solutions {
   max-width: 50%;
   position: relative;
-  margin-top: 90px;
   margin-left: 90px;
+}
+
+.menu__img--accueil {
+  margin-top: 90px;
+}
+
+.menu__img--apropos {
+  margin-top: 50px;
+}
+
+.menu__img--pb {
+  margin-top: 50px;
+}
+
+.menu__img--solutions {
+  margin-top: 50px;
 }
 
 /* Bouton de menu "Hamburger" */
