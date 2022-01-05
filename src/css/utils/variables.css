@@ -1,5 +1,5 @@
-.root {
-    /* Color styles */
+:root {
+    /* Couleurs */
 --bleu-fonce: rgba(33, 68, 106, 1);
 --bleu-roi: rgba(77, 105, 136, 1);
 --bleu-marine: rgba(0, 39, 81, 1);
@@ -9,11 +9,16 @@
 --noir: rgba(0, 0, 0, 1);
 --links: rgba(23, 124, 169, 1);
 
-/* Text-size styles */
+/* Tailles de police de caractères */
 --heading-1: 18px;
 --heading-2: 30px;
 --heading-3: 24px;
 --heading-4: 18px;
 --body: 14px;
 --legende: 11px;
+
+/* Polices de caractères */
+--font-heading-1-2: 'Norwester';
+--font-heading-3-4: 'Lato', sans-serif;
+--font-body: 'Lato', sans-serif;
 }

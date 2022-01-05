@@ -1,0 +1,12 @@
+.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--jaune);
+    color: var(--noir);
+    font-size: var(--font-body);
+    display: inline-flex;
+    place-items: center;
+    gap: var(--space2x);
+    transition: all .3s ease-in-out;
+}

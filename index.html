@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Site Aquaman">
-        <title>Aquaman</title>
         
+        <title>Aquaman</title>
         <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     </head>
 
     <body>
-        <header>
-            <div>
-                <button>
-                    <span></span>
+        <header class="header">
+            <div class="header__start">
+                <button class="menu__button"
+                @pointerdown="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu--button__open'">
+                    <span class="menu-button__bar"></span>
                 </button>
             </div>
   
             <h1><strong>Atlantis, Not An Ecologist</strong></h1>
       
-            <div>
+            <div class="header__end">
                 <a href="galerie.html">
-                    <img src="public/img/galerie-icone.png" alt="Icône ouvrant la galerie">
+                    <img class="header__img" src="public/img/galerie-icone.png" alt="Icône ouvrant la galerie">
                 </a>
     
-                <nav>
-                    <img src="public/img/img-menu/fond-menu.png" alt="Image de fond du menu déroulant">
-                    <img src="public/img/img-menu/logo-accueil-menu.png" alt="Logo Accueil en en-tête du menu">
-                    <ul>
-                        <li>
-                            <a href="index.html"><h2>Accueil</h2></a>
-                            <img src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
-                        </li>
+                <nav class="menu" :class="menuIsOpen && 'menu__open'" >
+                    <div class="menu__img">
+                        <img src="public/img/img-menu/fond-menu.png" alt="Image de fond du menu déroulant">
+                    </div>
+
+                    <div class="menu__content">
+                        <img class="menu__img--accueil" src="public/img/img-menu/logo-accueil-menu.png" alt="Logo Accueil en en-tête du menu">
+                        <ul>
+                            <li class="menu__item">
+                                <a class="menu__link" href="index.html"><h2>Accueil</h2></a>
+                                <img class="menu__line" src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
+                            </li>
               
-                        <li>
-                            <a href="aquaman.html"><h2>Aquaman</h2></a>
-                            <img src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
-                        </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="aquaman.html"><h2>Aquaman</h2></a>
+                                <img class="menu__line" src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
+                            </li>
               
-                        <li>
-                            <a href="pollution-oceans.html"><h2>Pollution des oceans</h2></a>
-                            <img src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
-                        </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="pollution-oceans.html"><h2>Pollution des oceans</h2></a>
+                                <img class="menu__line" src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
+                            </li>
               
-                        <li>
-                            <a href="solutions.html"><h2>Solutions</h2></a>
-                            <img src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
-                        </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="solutions.html"><h2>Solutions</h2></a>
+                                <img class="menu__line" src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
+                            </li>
               
-                        <li>
-                            <a href="autres-projets.html"><h2>A propos</h2></a>
-                            <img src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
-                        </li>
-                    </ul>
+                            <li class="menu__item">
+                                <a class="menu__link" href="autres-projets.html"><h2>A propos</h2></a>
+                                <img class="menu__line" src="public/img/img-menu/menu-line.svg" alt="Ligne séparant les titres des onglets du menu">
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>

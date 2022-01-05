@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+h1 {
+    color: var(--blanc);
+    font-family: var(--font-heading-1-2);
+    font-size: var(--heading-1);
+}
+
+h2 {
+    color: var(--blanc);
+    font-family: var(--font-heading-1-2);
+    font-size: var(--heading-2)
+}
+
+h3 {
+    color: var(--noir);
+    font-family: var(--font-heading-3-4);
+    font-size: var(--heading-3)
+}
+
+h4 {
+    color: var(--noir);
+    font-family: var(--font-heading-3-4);
+    font-size: var(--heading-4)
+}
+
+body, .legende {
+    font-family: var(--font-body);
+    color: var(--noir);
+}
+
+body {
+    background-color: var(--blanc);
+    font-size: var(--body);
+}
+
+.legende {
+    font-size: var(--legende);
+    display: block;
+    text-align: center;
+    margin-bottom: var(--space4x);
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
